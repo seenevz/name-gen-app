@@ -1,0 +1,42 @@
+/* imports */
+@import url("https://fonts.googleapis.com/css?family=Inconsolata&display=swap");
+
+/* global */
+html,
+body {
+   overflow: hidden;
+   font-family: "Inconsolata", monospace;
+   margin: 0;
+   height: 100%;
+}
+
+/* wrappers */
+.wind-wrap {
+   height: 100%;
+   width: 400px;
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+}
+
+.form-wrap {
+   text-align: center;
+}
+
+/* Blocks */
+
+.results-box {
+   margin: 0 auto;
+   padding: 5px;
+   width: 200px;
+   height: 200px;
+   overflow: hidden;
+   border: black 1px solid;
+   border-radius: 15px;
+   text-align: center;
+}
+
+.header {
+   color: red;
+   text-align: center;
+}
