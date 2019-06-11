@@ -12,12 +12,10 @@ form.addEventListener(
    formEvent => {
       formEvent.preventDefault();
 
-      const selectedWetterwald = document.querySelector(
-         'input[name="wetterwalds"]:checked'
-      ).value;
+      const formData = new FormData(form);
+      const selectedWetterwald = formData.get("wetterwalds");
 
-      console.log(countInput);
-      const repeatTimes = countInput.value;
+      const repeatTimes = formData.get("repeat");
       const repeatedName = nameInterface.repeat(
          selectedWetterwald,
          repeatTimes
